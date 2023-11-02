@@ -17,7 +17,7 @@ public class AcademyController {
     @Autowired
     AcademyService academyService;
 
-    @PostMapping("/")
+    @PostMapping
     public ResponseEntity<Object> create(@RequestBody  Academy academy){
         try {
             var result = this.academyService.createAcademy(academy);
